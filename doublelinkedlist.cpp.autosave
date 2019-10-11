@@ -1,0 +1,13 @@
+#include "DoubleLinkedList.h"
+#include <Node.h>
+
+DoubleLinkedList::DoubleLinkedList(){
+    first=nullptr;
+    last=nullptr;
+    cont=0;
+}
+
+bool DoubleLinkedList::isEmptyList()
+{
+    return first == nullptr;
+}
