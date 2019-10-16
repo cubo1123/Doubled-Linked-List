@@ -9,6 +9,21 @@ int main()
     DoubleLinkedList doubleLinkedList;
     string data;
     int id;
+    doubleLinkedList.addElement("A",1);
+    doubleLinkedList.addElement("AB",11);
+    doubleLinkedList.addElement("ABC",112);
+    doubleLinkedList.addElement("ABCD",1123);
+    doubleLinkedList.addElement("ABCDE",11235);
+    doubleLinkedList.addFirst("EL PINCHES PRIMERO",111);
+    doubleLinkedList.showAll();
+
+    cout<<"Cool"<<endl;
+
+    cout<<doubleLinkedList.search("ABC",112)<<endl;
+    cout<<"Cool"<<endl;
+    cout<<doubleLinkedList.search("ABCDEFGHI",11235813)<<endl;
+    cout<<"Cool"<<endl;
+    /*
     while(choice != -1)
     {
         cout<< "1.InsertFirst" << endl;
@@ -31,16 +46,13 @@ int main()
                 cin>>data;
                 cout<<"Ingrese el id";
                 cin>>id;
-                doubleLinkedList.insertFirst(data,id);
-                doubleLinkedList.printList();
+                doubleLinkedList.addElement(data,id);
             break;
-                /*
+
             case 2:
-                cout<<"Ingrese la data a agregar";
-                cin.getline(data,50);
-                insertLast(data);
-                printList();
+                doubleLinkedList.showAll();
             break;
+
             case 3:
                 int old,newitem;
                 cout<<"Ingrese el id del anterior";
@@ -80,9 +92,9 @@ int main()
             default:
                 cout << "Ingrese una opcion valida" <<endl;
             break;
-            */
+
         }
 
-    }
+    }*/
 return 0;
 }
