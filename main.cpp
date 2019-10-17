@@ -15,8 +15,10 @@ int main()
     doubleLinkedList.addElement("ABCD",1123);
     doubleLinkedList.addElement("ABCDE",11235);
     doubleLinkedList.addFirst("EL PINCHES PRIMERO",111);
+    doubleLinkedList.addinPosition("JOJOJO",0,3);
+    doubleLinkedList.deleteElement(0);
+    doubleLinkedList.deletePosition(3);
     doubleLinkedList.showAll();
-
     cout<<"Cool"<<endl;
 
     cout<<doubleLinkedList.search("ABC",112)<<endl;

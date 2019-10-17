@@ -7,19 +7,28 @@ class DoubleLinkedList
 {
 public:
     DoubleLinkedList();
-    bool isEmptyList();
-    bool addElement(string data, int id);
-    bool addFirst(string data, int id);
-    bool addLast();
+    Node* addElement(string data, int id);
+    Node* addFirst(string data, int id);
+    Node* addinPosition(string data, int id, int position);
+
+    bool deleteElement(int id);
+    bool deletePosition(int pos);
+
+    bool updateElement(int id);
+
     void showAll();
     Node* search(string data,int id);
+    bool isEmptyList();
+    bool validatePosition(int pos);
+    Node* initializeNode(string data,int id);
+
+    bool validateId(int id);
     int getSize();
+
 private:
     int cont;
     Node* first;
     Node* last;
-
-
 };
 
 #endif // DOUBLELINKEDLIST_H
